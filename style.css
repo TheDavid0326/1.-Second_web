@@ -1,0 +1,201 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+body {
+    text-align: center;
+    font-size: 1rem;
+       
+    }
+  
+  header {
+    background-color: white;
+    /*#14a39e*/
+    color: black;
+    padding: 1rem 2rem;
+  }
+  
+  h2 {
+    font-family: sansita swashed;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    display:inline-block;
+    position:relative;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  }
+  
+  h1::after, h1::before {
+    content:"";
+    position:absolute;
+    width: 120px;
+    height: 3px;
+    background-color:currentColor;
+    top: 0.6em;
+  }
+  
+  
+  h1::before{
+    left: -130px;
+  }
+  
+  h1::after{
+    right:-130px;
+  }
+  
+  footer {
+    background-color: #14a39e;
+     /* #ef7c1b*/
+    padding: 3 rem;
+    color: white;
+    font-size: 1rem;
+  }
+
+ ul {
+  list-style-type: none;
+
+ }
+
+  div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    color: black;
+    /*background: white;*/
+    border-radius: 75px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+  }
+  
+  div:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  div:hover::before, div:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  div:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
+  }
+
+  #hover_servicios{
+    background: rgba(255, 255, 255,0.6) url(casa3.png);
+    background-size: cover;
+    background-blend-mode: color;
+  }
+  
+  #hover_trabajos{
+    background: rgb(255, 255, 255,0.6) url(casa4.png);
+    background-size: cover;
+    background-blend-mode: color;
+  }
+
+  #hover_contacto{
+    background: rgba(255, 255, 255,0.6) url(contacto.png);
+    background-size: cover;
+    background-blend-mode: color;
+  }
+
+  #hover_historia{
+    background: rgba(255, 255, 255,0.6) url(casa\ pintada.jfif);
+    background-size: cover;
+    background-blend-mode: color;
+  }

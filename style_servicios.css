@@ -1,0 +1,44 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+body {
+  margin:0 ;
+  background-color: #efefef;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+header {
+  background-color: #83023e;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+footer {
+  background-color: #14a39e;
+  /* #ef7c1b*/
+  padding: 3 rem;
+  color: white;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  
+  }
+
+.container {
+  width: 810px;
+  margin: 0 auto;
+  }
+
+.container article{
+  background-color: white;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  padding: 0.25rem 0;
+}
